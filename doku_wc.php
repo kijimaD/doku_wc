@@ -41,13 +41,17 @@
 	 var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
 
 	 var options = {
-		 title: "DAILY WORD COUNTER",
+		 title: "WORD COUNTER<?php echo '(ALL:' . $cur_wc . ')';?>",
 		 calendar: { cellSize: 8 },
 	 };
 
 	 chart.draw(dataTable, options);
  }
 </script>
+
+<div id="calendar_basic" style="width: 1000px; height: 100px;"></div>
+<small>
+</small>
 
 <!-- <p>
 	 <?php
@@ -80,4 +84,3 @@
 	 fclose($fp);
 	 ?>
 	 </p> -->
-<div id="calendar_basic" style="width: 1000px; height: 100px;"></div>
