@@ -25,7 +25,7 @@
 					 $cur_wc = (int)$line[3];
 					 $diff_wc = $cur_wc - $prev_wc;
 				 }
-				 echo '[new Date('.$line[0].','.$line[1].','.$line[2].'),'.$diff_wc.'],';
+				 echo '[new Date('.$line[0].','.$line[1]-1.','.$line[2].'),'.$diff_wc.'],';
 				 $row++;
 				 $prev_wc = (int)$line[3];
 			 }
